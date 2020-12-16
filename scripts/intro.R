@@ -25,5 +25,8 @@ employees2 <-read.csv("./data/Employees.csv", header = TRUE)
 str(employees2)
 
 View(employees)
+column <- table(employees$Name)
+column # Lists out frequency of Column values
+View(column) # can also be viewed in table format
 
 remove(list = ls()) # ls() list all variables in the environment
